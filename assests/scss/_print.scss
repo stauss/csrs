@@ -1,0 +1,55 @@
+/* ============================================================
+
+Print
+
+============================================================ */
+
+* {
+	background : transparent !important;
+	color : black !important;
+	box-shadow : none !important;
+	text-shadow : none !important;
+	filter : none !important;
+	-ms-filter : none !important; 
+}
+
+@page {
+	margin : 0.5cm; 
+}
+
+//-----------------------------------| Type
+
+h2, h3 {
+	orphans : 3;
+	widows : 3;
+	page-break-after : avoid; 
+}
+
+p {
+	orphans : 3;
+	widows : 3;
+}
+
+pre, blockquote {
+	border : 1px solid #000;
+	page-break-inside : avoid; 
+}
+
+abbr[title]:after {
+	content: " (" attr(title) ")"; 
+}
+
+//-----------------------------------| Color
+
+a, a:visited {
+	text-decoration : underline; 
+}
+
+a[href]:after {
+	content : " (" attr(href) ")"; 
+}
+
+a[href^="javascript:"]:after,
+a[href^="#"]:after {
+	content : ""; 
+}

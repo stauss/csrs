@@ -1,0 +1,21 @@
+/* ============================================================
+
+650
+
+============================================================ */
+
+// els that turn on at 650
+.onSmall {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}
+
+// els that turn on at 650
+.offSmall {
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+}
+
+//============================================================

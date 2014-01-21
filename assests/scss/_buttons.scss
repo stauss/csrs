@@ -1,0 +1,21 @@
+/* ============================================================
+
+Buttons
+
+============================================================ */
+
+// default button styles
+.btn {
+	display: inline-block;
+	*display: inline;
+
+	padding: 10px 15px;
+	margin: 0 15px 0 0;
+	cursor: pointer;
+
+	font-family: 'Lato', sans-serif; 
+	font-weight: 200;
+	font-size: 0.8em;
+	letter-spacing: .05em;
+	color: $w !important;
+}

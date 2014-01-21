@@ -1,0 +1,21 @@
+/* ============================================================
+
+550
+
+============================================================ */
+
+// on / off styles
+.offLittle {
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+}
+
+// els that turn on at this width
+.onLittle {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}
+
+//============================================================

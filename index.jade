@@ -18,7 +18,7 @@ html.no-js
     link(rel='stylesheet', href='assests/css/icons.css')
 
     // Google Font
-    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:400,700')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Istok+Web:400,700', type='text/css')
     //-script(src='javascripts/vendor/modernizr-2.6.2.min.js')
   body
     //if lt IE 7
@@ -29,14 +29,199 @@ html.no-js
 
 
 
-    //- Global Header
-    header.gHead           
+    // Global Header
+    header.gHead
+      div.center
+        a.gLogo.sprite(href="#")
+          h1 CSRS
+
+        // start global nav
+        div.gNavWrap
+          nav.gNav
+            a.gNavIcon.sprite.offLittle(href="#") Menu
+            a.gLoginIcon.sprite.offLittle(href="#") Login
+            ul
+              li
+                a.active(href="") Home
+              li
+                a(href="") Events
+              li
+                a(href="") Resources
+              li
+                a(href="") Membership
+              li
+                a(href="") Patients
+              li
+                a(href="") Research
+              li
+                a(href="") About CSRS                
     
-    //- Global Wrapper
+    // Start Slider
+    section.full.iSlider
+      div.center
+        h1 Thought Leaders
+        p Peer-reviewed research on current trends in the treatment of cervical spine disease.
+        a.btn
+          span Learn More
+
+    // Global Wrapper
     div.gWrap
+
+      // top index touts
+      div.full.iToutWrap.whiteBg
+        // start touts
+        section.iTout.fourth.borderBottom.borderRight
+          header
+            div.iToutIcon.iPledgeIcon
+              span
+            h2 Pledge Support
+            p  Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc. 
+            a.btn
+              span Learn More
+
+        section.iTout.fourth.borderBottom
+          header
+            div.iToutIcon.iResearchIcon
+              span
+            h2 Pledge Support
+            p  Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc. 
+            a.btn 
+              span Learn More
+
+        section.iTout.fourth.borderRight
+          header
+            div.iToutIcon.iMemberIcon
+              span
+            h2 Pledge Support
+            p  Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc. 
+            a.btn
+              span Learn More
+
+        section.iTout.fourth
+          header
+            div.iToutIcon.iMemberJoinIcon
+              span
+            h2 Pledge Support
+            p  Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc. 
+            a.btn
+              span Learn More
+
+    div.center.iEvents
+      // index events section
+      div.full.iEventsWrap.whiteBoxWrap
+        section
+          article
+            header
+              h2
+            div.iToutPostDate
+              ul.authorList
+                li
+                  a(href="#", rel="author") Joon Y. Lee
+                li
+                  a(href="#", rel="author") Joon Y. Lee
+                li
+                  a(href="#", rel="author") Joon Y. Lee
+                li
+                  a(href="#", rel="author") Joon Y. Lee
+                li
+                  a(href="#", rel="author") Joon Y. Lee
+                li
+                  a(href="#", rel="author") Joon Y. Lee
+              time Decmber 4 2012
+            p Lorem ipsum dolor sit amet, consecte tuer scing elit, sed diam nonummy nibh euismod tinci unt ut laoreet dolore magna aliquam volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit obortis nisl ut aliquip ex ea commodo quat.
+            div.bntShareWrap
+              a.btn Learn More
+              span Share
+                a(href="#") in
+                a(href="#") email
+
+            
 
     //- Global Footer
     footer.gFoot
+      div.center
+        div.footCol
+          ul
+            li 
+              a.footUlHead(href="#") Events
+            li 
+              a(href="#") Annual Meeting
+            li 
+              a(href="#") Upcoming Meetings
+            li 
+              a(href="#") Instructional Courses
+            li 
+              a(href="#") Event Registration
+        div.footCol
+          ul
+            li 
+              a.footUlHead(href="#") Resources
+            li 
+              a(href="#") Library
+            li 
+              a(href="#") Textbooks
+            li 
+              a.footUlHead(href="#") Memebership
+            li 
+              a(href="#") Info and Application
+            li 
+              a(href="#") Login
+        div.footCol
+          ul
+            li 
+              a.footUlHead(href="#") Patients
+            li 
+              a(href="#") Overview
+            li 
+              a(href="#") Find a Surgeon
+            li 
+              a(href="#") Printed Materials
+            li 
+              a(href="#") ViewMedica Animations
+        div.footCol
+          ul
+            li 
+              a.footUlHead(href="#") Events
+            li 
+              a(href="#") Awards & Grants
+            li 
+              a(href="#") Grant Application
+            li 
+              a(href="#") Donors & Sponsors
+            li 
+              a(href="#") Donate
+        div.footCol
+          ul
+            li 
+              a.footUlHead(href="#") Events
+            li 
+              a(href="#") Mission & History 
+            li 
+              a(href="#") Officers
+            li 
+              a(href="#") Policies & Bylaws
+            li 
+              a(href="#") Committees
+            li 
+              a(href="#") Other Sites
+            li 
+              a(href="#") International
+            li 
+              a(href="#") Contact
+        div.footCol
+          a(href="", tel="") Phone:
+            span
+          a(href="", mailto="") e-mail:
+            span
+          div.footSocialWrap
+            ul.footSocial
+              li
+                a(href="") Linked in
+              li
+                a(href="") Google Plus
+        div.footLegalWrap
+          p © Copyright 2013 113, Cervical Spine Research Society. All rights reserved.
+
       
 
 

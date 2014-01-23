@@ -4,26 +4,11 @@ Type
 
 ============================================================ */
 
-// Heading Front
 @font-face {
-    font-family: 'brisko_sansbold';
-    src: url('../fonts/brisko_sans_bold_3-webfont.eot');
-    src: url('../fonts/brisko_sans_bold_3-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/brisko_sans_bold_3-webfont.woff') format('woff'),
-         url('../onts/brisko_sans_bold_3-webfont.ttf') format('truetype'),
-         url('../fonts/brisko_sans_bold_3-webfont.svg#brisko_sansbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+	@include webFont($priFontFamily, $priFontName);
+	font-weight: normal;
+	font-style: normal;
 }
-
-
-
-p {
-	font-family: 'Lato', sans-serif; 
-	font-weight: 400;
-}
-
 
 
 /* 
@@ -31,10 +16,9 @@ p {
 */
 
 h1, h2, h3, h4, h5 ,h6 {
-	font-family: 'brisko_sansbold';
+	font-family: $priFontFamily;
 	font-weight: normal;
 	font-style: normal;
-	text-transform: uppercase;
 }
 
 h1 {
@@ -44,6 +28,9 @@ h1 {
 	line-height: $h1LineHeight;
 	font-weight: $h1FontWeight;
 }
+
+
+
 
 h2 {
 	font-size: $h2Size;
@@ -85,9 +72,9 @@ h6 {
 	font-weight: $h6FontWeight;
 }
 
-/* 
-====================================================== OTHER TYPE
-*/
+// /* 
+// ====================================================== OTHER TYPE
+// */
 
 a {
    display:block;
@@ -95,9 +82,9 @@ a {
 }
 
 p, ol, ul, dl, address, time {
-	font-family: 'Lato', sans-serif; 
+	font-family: $gFont; 
 	font-weight: 400;
-	font-size: 0.85em;
+	font-size: $pSize;
 	line-height: $pLineHeight;
 	letter-spacing: $pSpacing;
 
@@ -107,9 +94,16 @@ p, ol, ul, dl, address, time {
 	}
 }
 
+.subText {
+	color: $lightText;
+	font-size: 0.75em;
+}
 
-
-
-
+// custom styles
+.share {
+	color: $shareText;
+	font-size: 0.75em;
+	text-transform: uppercase;
+}
 
 

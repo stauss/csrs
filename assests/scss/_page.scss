@@ -3,3 +3,76 @@
 page
 
 ============================================================ */
+
+
+
+//============================================================| Index Template
+// main marque
+.iSlider {
+	height: 200px;
+	background-color: #ccc;
+}
+
+// slider heading
+.iSlider h1, .iSlider p {
+	text-align: center;
+}
+
+// slider button
+.iSlider a.btn {
+	margin: 0 auto;
+}
+
+//------------------------------------------------| Home touts
+// home tout
+.iTout {
+	@include sizeEl(block, left, 50%, auto);
+	padding: 10px 10px;
+	text-align: center;
+}
+
+// tout button
+.iTout .btn {
+	margin: 0 auto;
+}
+
+// section with a border bottom
+.iTout.borderBottom {
+	border-color: $whiteBorderColor;
+}
+
+// section with border right
+.iTout.borderRight {
+	border-color: $whiteBorderColor;
+}
+
+// home page tout icon
+// // this is generic
+.iToutIcon {
+	@include sizeEl(block, left, 100%, 80px);
+}
+
+.iToutIcon span {
+	@include sizeEl(block, none, 100px, 70px);
+	@include spritePos('sprite.png', 0px 0px);
+	margin: 0 auto;
+	background-size: 320px 1098px;
+}
+
+// icon pos
+.iToutIcon.iPledgeIcon span     { background-position: 9px -90px; }
+.iToutIcon.iResearchIcon span   { background-position: -72px -90px; }
+.iToutIcon.iMemberIcon span     { background-position: -138px -90px; }
+.iToutIcon.iMemberJoinIcon span { background-position: -230px -90px; }
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,3 +4,12 @@
 
 ============================================================ */
 
+
+.gLogo, {
+	@include spritePos2x('sprite@2x.png', 510px 1750px);
+}
+
+// this is a test
+.iToutIcon span {
+	@include spritePos2x('sprite@2x.png', 320px 1098px);
+}

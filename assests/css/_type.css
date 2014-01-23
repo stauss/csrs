@@ -1,0 +1,14 @@
+/* ============================================================
+
+Type
+
+============================================================ */
+@font-face {
+  font-family: "caecilia_lt_std45_light";
+  src: url("../fonts/caecilialtstd-light-webfont.eot");
+  src: url("../fonts/caecilialtstd-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/caecilialtstd-light-webfont.woff") format("woff"), url("../fonts/caecilialtstd-light-webfont.ttf") format("truetype"), url("../fonts/caecilialtstd-light-webfont.svg#caecilia_lt_std45_light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+p {
+  font-family: "caecilia_lt_std45_light"; }

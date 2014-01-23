@@ -5,17 +5,62 @@ Buttons
 ============================================================ */
 
 // default button styles
+// 
+// 
+
 .btn {
+	display: block;
+	position: relative;
+	width: 90px;
+	overflow: visible;
+}
+
+.btn span {
+	@include backgroundImg('priBtnGrad.png', repeat-x , top center);
+
 	display: inline-block;
 	*display: inline;
-
-	padding: 10px 15px;
+	position: relative;
+	width: 90px;
+	padding: 7px 8px 5px 8px;
 	margin: 0 15px 0 0;
 	cursor: pointer;
 
-	font-family: 'Lato', sans-serif; 
-	font-weight: 200;
-	font-size: 0.8em;
-	letter-spacing: .05em;
-	color: $w !important;
+	color: $w;
+	font-size: .7em;
+	text-align: center;
+	letter-spacing: .08em;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #3c4f59;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+	box-shadow: 0 1px 2px rgba(0,0,0,.15);
+	border: solid 1px #44565e;
+	z-index: 1;
+	overflow: visible;
+}
+
+// background shading
+.btn::before {
+	@include backgroundImg('afterBtnBg.png', repeat-x , top center);
+	@include afterImg(90px, 100%, repeat-x, 0px, -4px);
+	z-index: 0;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+// button on tan
+.btn.secBtn span {
+	@include backgroundImg('secBtnGrad.png', repeat-x , top center);
+	border: none;
+	color: $blueHeader;
+	-webkit-box-shadow: 0 1px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px rgba(0,0,0,.2);
+	box-shadow: 0 1px rgba(0,0,0,.2);
 }

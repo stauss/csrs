@@ -17,7 +17,6 @@ Mixins
 }
 
 @mixin disNone(){ 
-  display: none;
   opacity: 0;
   visibility: hidden;
 }
@@ -26,6 +25,16 @@ Mixins
   display: block;
   opacity: 1;
   visibility: visible;
+}
+
+// do webfont
+@mixin webFont($family, $name, $folder: $fontDir) {
+  font-family: $family;
+      src: url('#{$folder}#{$name}.eot');
+      src: url('#{$folder}#{$name}.eot?#iefix') format('embedded-opentype'),
+         url('#{$folder}#{$name}.woff') format('woff'),
+         url('#{$folder}#{$name}.ttf') format('truetype'),
+         url('#{$folder}#{$name}.svg#caecilia_lt_std45_light') format('svg');
 }
 
 
@@ -253,12 +262,6 @@ background-color : hsla(hue($color), saturation($color), lightness($color), $alp
   overflow : hidden;
 }
 
-// Hide from visual and speaking browsers
-
-@mixin hidden() {
-  display : none !important;
-  visibility : hidden;
-}
 
 // Hide but maintain layout
 
@@ -358,14 +361,21 @@ overflow: visible; } } }
 // Background Image Mix in
 
 @mixin backgroundImg($filename,$repeat,$position) {
-    background: transparent url(#{$imagedir}#{$filename}) $repeat $position;
+    background: transparent url(#{$bgDir}#{$filename}) $repeat $position;
 }
+
 
 // Sprite Mixin
 @mixin spritePos($filename, $position) {
   background-image: url(../#{$spriteDir}#{$filename});
   background-repeat:no-repeat;
   background-position: $position;
+}
+
+// 2 time the sprite
+@mixin spritePos2x($filename, $bgSize) {
+  background-image: url(../#{$spriteDir}#{$filename});
+  background-size: $bgSize;
 }
 
 // Simple Animation Mixin
@@ -376,25 +386,14 @@ overflow: visible; } } }
   transition: $aniProp $secs $value;
 }
 
-// After img mixin
-// @mixin afterImg($width, $height, $top, $left, $img, $repeat, $position) {
-//   display: block;
-//   position: absolute;
-//   content: "";
-//   width: $width;
-//   height: $height;
-//   top: $top;
-//   left: $left;
-//   background: transparent url(#{$imagedir}#{$img}) $repeat $position;
-// }
-
-@mixin afterImg($width, $height, $img, $repeat, $position) {
+@mixin afterImg($width, $height, $repeat, $top, $left) {
   display: block;
   position: absolute;
   content: "";
   width: $width;
   height: $height;
-  background: transparent url(#{$imagedir}#{$img}) $repeat $position;
+  top: $top;
+  left: $left;
 }
 
 // this is the prefix settings for the scale animtations
